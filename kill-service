@@ -1,0 +1,3 @@
+pkill -9 joker
+pkill -9 xray
+pkill -9 gost

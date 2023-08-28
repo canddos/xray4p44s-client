@@ -1,0 +1,10 @@
+chmod +x frpc
+chmod +x frpc.ini
+chmod +x xray
+chmod +x joker
+
+./joker ./xray -config=client-freedom.json
+sleep 3
+./joker ./frpc -c frpc.ini
+sleep 3
+./gost -L=socks5://:8989
